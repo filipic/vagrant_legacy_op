@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
     # NFS exports need an explicitly-defined IP,
     # so create a private, NFS-dedicated network on 192.168.10.x
     # config.vm.synced_folder ".", "/vagrant", :nfs => true
-    config.vm.synced_folder "../openparlamento", "/openparlamento", :nfs => true
+    config.vm.synced_folder "~/", "/me", :nfs => true
     config.vm.network :private_network, ip: "192.168.10.2"
 
     # all requests to host:8680 are forwarded to guest:80

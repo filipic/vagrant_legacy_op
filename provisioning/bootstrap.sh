@@ -9,6 +9,11 @@ apt-get install -y git-core git-svn
 export DEBIAN_FRONTEND=noninteractive
 apt-get install -q -y mysql-server-5.5
 
+git config --global user.name "guglielmo"
+git config --global user.email guglielmo.celata@gmail.com
+
+# link my ssh keys (git needs them)
+ln -s /me/.ssh/id* ~/.ssh/
 
 
 
