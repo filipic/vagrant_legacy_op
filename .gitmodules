@@ -1,0 +1,3 @@
+[submodule "parlamento17"]
+	path = parlamento17
+	url = git@github.com:openpolis/openparlamento.git
