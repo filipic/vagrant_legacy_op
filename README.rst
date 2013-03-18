@@ -36,6 +36,7 @@ The environment requires a structure similar to the following::
 In the above situation, issue the clone command while inside ``~/Workspace``.
 
 .. code::
+
     cd ~/Workspace
     git clone https://github.com/guglielmo/vagrant_legacy_op.git op_legacy_dev
     vagrant up
