@@ -30,11 +30,6 @@ then
     cat php.ini.000 |  sed 's/short_open_tag = On/short_open_tag = Off/' > php.ini
     popd
 
-
-    mysql -uroot -e "create database opp17 default charset utf8"
-    ./symfony propel-build-sql
-    ./symfony propel-insert-sql
-
     cp /vagrant/provisioning/opp17.vhost.conf /etc/apache2/sites-available/opp17
     a2ensite opp17
 

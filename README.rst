@@ -42,11 +42,19 @@ In the above situation, issue the clone command while inside ``~/Workspace``.
     vagrant up
 
 Openparlamento
-==========
+==============
 Openparlamento can be cloned following the same caution, using::
 
     cd ~/Workspace
     git clone git@github.com:openpolis/openparlamento.git
+
+Other steps:
+* config/settings.yml must be copied (there should be no modifications, but keep it secret)
+* local.parlamento17.openpolis.it must point to 127.0.0.1 in /etc/hosts
+* create cache and log directory under /me/Workspace/openparlamento, check permission
+* create a symbolik link to /me/Workspace/openparlamento (shortcat)
+* mysql -uroot -e "create database opp17 default charset utf8"
+* ./symfony propel-build-sql; ./symfony propel-insert-sql;
 
 
 Politici
